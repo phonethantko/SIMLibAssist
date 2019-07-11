@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Automatic Library Access for SIM",
+    "version": "0.0.0",
+    "author": "Phone Thant Ko",
+    "description": "Automatically load library resources using SIM LibProxy by Phone Thant Ko <phonethantko@outlook.com>",
+    "background": {
+      "scripts": ["js/lso.js", "js/parseuri.js", "js/resources.js", "js/background.js"]
+    },
+    "options_page": "html/options.html",
+    "permissions": [
+      "tabs", "webNavigation", "notifications"
+    ],
+    "browser_action": {
+      "default_title": "Reload using SIMLib Proxy"
+    }
+}

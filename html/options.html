@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+ * Derived from the Google Calendar Checker available at:
+ * http://code.google.com/chrome/extensions/samples.html
+ *
+ * Licensed under the Google 3-Clause BSD:
+ * http://code.google.com/google_bsd_license.html
+-->
+<html>
+<head>
+  <title>Auto Library Proxy Access for SIM</title>
+  <script src="../javascript/lso.js"></script>
+  <script src="../javascript/options.js"></script>
+  <style>
+    #content {
+      background-color: white;
+      border: 4px solid #006E51;
+      border-radius: 12px;
+      margin: 40px auto 20px;
+      padding: 8px;
+      width: 600px;
+    }
+    .option_row {
+      clear: left;
+      padding: 2.5em 1em 0;
+      text-align:center;
+    }
+    #logo {
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="content">
+    <div id = "logo">
+      <br>
+      <label>Auto Library Proxy Access for SIM</label>
+    </div>
+    <div class="option_row">
+      <div>
+        <table cellpadding=1 width=100%>
+          <tr>
+            <td width="20%">
+              &nbsp;
+            </td>
+            <td width="5%">
+              <input type="checkbox" id="autoRedirect" name="autoRedirect" title="">
+            </td>
+            <td width="60%" align="left">
+              <span id="autoRedirectText" title="">Auto-redirect common journals</span>
+            </td>
+            <td width="10%">
+              <label id="autoRedirectStatus"></label>
+            </td>
+            <td width="5%">
+              &nbsp;
+            </td>
+          </tr><tr><td colspan="5"><hr></td></tr>
+          <tr>
+            <td width="20%">
+              &nbsp;
+            </td>
+            <td width="5%">
+              <input type="checkbox" id="enableSIM" name="enableSIM" title="">
+            </td>
+            <td width="60%" align="left">
+              <span id="enableSIMText" title="">Enable SIM proxy (ezproxy.sim.edu.sg)</span>
+            </td>
+            <td width="10%">
+              <label id="enableSIMStatus"></label>
+            </td>
+            <td width="5%">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+          <br><span style="font-size: x-small; font-family: Verdana; color:#888" id="statusBar"></span>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+      <span style="font-size: x-small; font-family: Verdana">Copyright &copy; Phone Thant Ko 2019
+          <br>&lt;<a href="mailto:semenko@alum.mit.edu">phonethantko@outlook.com</a>&gt;<br>
+        Open source at <a href="https://github.com/phonethantko">GitHub</a> (License: MIT)
+          </span>
+  </div>
+</body>
+</html>

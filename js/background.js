@@ -55,7 +55,7 @@ function showHint(warning) {
       message: warning
     },
     noteId => {
-      setTimeOut(() => {
+      setTimeout(() => {
         chrome.notifications.clear(noteId, () => {})
       }, 8000);
     }

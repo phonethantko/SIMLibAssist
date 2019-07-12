@@ -13,7 +13,13 @@ function init() {
 
 function buttonLogic() {
   // If there is more than one proxy available.
-
+  // if (!$('autoRedirect').checked) {
+  //   $('autoRedirect').checked = true;
+  // }
+  //
+  // if (!$('enableSIM').checked) {
+  //   $('enableSIM').checked = true;
+  // }
 }
 
 function save() {
@@ -24,7 +30,7 @@ function save() {
   chrome.extension.getBackgroundPage().parseLocalStorage();
   $('autoRedirectStatus').innerHTML = 'Saved.';
   $('autoRedirectStatus').style.display = 'block';
-  setTimeOut(() => {
+  setTimeout(() => {
     $('autoRedirectStatus').style.display = 'none'
   }, 1500);
 }

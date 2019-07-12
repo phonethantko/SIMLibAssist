@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Automatic Library Access for SIM",
-    "version": "0.0.0",
+    "version": "1.0.0",
+    "version_name": "1.0.0 pilot run",
     "author": "Phone Thant Ko",
     "description": "Automatically load library resources using SIM LibProxy by Phone Thant Ko <phonethantko@outlook.com>",
     "background": {
